@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5B6287F32D9D6FB200E81767 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6287F12D9D6FB200E81767 /* LoginView.swift */; };
+		5B6288052D9D826400E81767 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6288042D9D825B00E81767 /* LoginViewModel.swift */; };
+		5B6288092D9D868B00E81767 /* TodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6288082D9D867D00E81767 /* TodoListView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		5B785C5B2D9D6B67002B88FE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,6 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5B6287F12D9D6FB200E81767 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		5B6288042D9D825B00E81767 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		5B6288082D9D867D00E81767 /* TodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListView.swift; sourceTree = "<group>"; };
 		5B785C4A2D9D6B62002B88FE /* TaskMated.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskMated.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B785C5A2D9D6B67002B88FE /* TaskMatedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskMatedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B785C642D9D6B67002B88FE /* TaskMatedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskMatedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,10 +81,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B6288002D9D709E00E81767 /* groups */ = {
+			isa = PBXGroup;
+			children = (
+				5B6288032D9D70C000E81767 /* Views */,
+				5B6288022D9D70B200E81767 /* ViewModels */,
+				5B6288012D9D70A900E81767 /* Models */,
+				5B785C4C2D9D6B62002B88FE /* TaskMated */,
+			);
+			path = groups;
+			sourceTree = "<group>";
+		};
+		5B6288012D9D70A900E81767 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5B6288022D9D70B200E81767 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				5B6288042D9D825B00E81767 /* LoginViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		5B6288032D9D70C000E81767 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5B6288082D9D867D00E81767 /* TodoListView.swift */,
+				5B6287F12D9D6FB200E81767 /* LoginView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		5B785C412D9D6B62002B88FE = {
 			isa = PBXGroup;
 			children = (
-				5B785C4C2D9D6B62002B88FE /* TaskMated */,
+				5B6288002D9D709E00E81767 /* groups */,
 				5B785C5D2D9D6B67002B88FE /* TaskMatedTests */,
 				5B785C672D9D6B67002B88FE /* TaskMatedUITests */,
 				5B785C4B2D9D6B62002B88FE /* Products */,
@@ -236,6 +280,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B6288052D9D826400E81767 /* LoginViewModel.swift in Sources */,
+				5B6287F32D9D6FB200E81767 /* LoginView.swift in Sources */,
+				5B6288092D9D868B00E81767 /* TodoListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,7 +442,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"TaskMated/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = FZW92JYSAX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -424,7 +471,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"TaskMated/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = FZW92JYSAX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
